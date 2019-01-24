@@ -12,16 +12,40 @@
     <artifactId>springboot-prometheus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-prometheus</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Demo project for Prometheus Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <prometheus.version>0.6.0</prometheus.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- PROMETHEUS -->
+        <!-- The client -->
+        <dependency>
+            <groupId>io.prometheus</groupId>
+            <artifactId>simpleclient</artifactId>
+            <version>${prometheus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.prometheus</groupId>
+            <artifactId>simpleclient_spring_boot</artifactId>
+            <version>${prometheus.version}</version>
+        </dependency>
+
+        <!-- http://metrics.ryantenney.com -->
+        <dependency>
+            <groupId>com.ryantenney.metrics</groupId>
+            <artifactId>metrics-spring</artifactId>
+            <version>3.1.3</version>
         </dependency>
 
         <dependency>
