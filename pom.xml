@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <prometheus.version>0.6.0</prometheus.version>
+        <prometheus.version>0.16.0</prometheus.version>
     </properties>
 
     <dependencies>
